@@ -1,0 +1,211 @@
+- generic [ref=f3e2]:
+  - banner [ref=f3e3]:
+    - link "Přeskočit na obsah" [ref=f3e4] [cursor=pointer]:
+      - /url: "#obsah"
+    - generic [ref=f3e5]:
+      - link "Truhlářství Dvořák" [ref=f3e6] [cursor=pointer]:
+        - /url: "#top"
+      - navigation "Hlavní navigace" [ref=f3e7]:
+        - link "Služby" [ref=f3e8] [cursor=pointer]:
+          - /url: "#sluzby"
+        - link "Realizace" [ref=f3e9] [cursor=pointer]:
+          - /url: "#realizace"
+        - link "Postup" [ref=f3e10] [cursor=pointer]:
+          - /url: "#postup"
+        - link "Kontakt" [ref=f3e11] [cursor=pointer]:
+          - /url: "#kontakt"
+        - link "Zavolat" [ref=f3e12] [cursor=pointer]:
+          - /url: tel:+420774812390
+  - main [ref=f3e13]:
+    - region "Poctivý nábytek na míru. Navržený pro váš domov." [ref=f3e14]:
+      - img "Moderní dřevěná kuchyně s ostrůvkem a teplým denním světlem" [ref=f3e16]
+      - generic [ref=f3e20]:
+        - paragraph [ref=f3e21]: Truhlářství Dvořák
+        - heading [level=1] [ref=f3e22]:
+          - text: Poctivý nábytek na míru.
+          - emphasis [ref=f3e23]: Navržený pro váš domov.
+        - paragraph [ref=f3e24]: Kuchyně, vestavěné skříně a masiv z vlastní dílny — Brno a okolí. Zaměření a 3D vizualizace zdarma při realizaci.
+        - generic [ref=f3e25]:
+          - generic [aria-hidden] [ref=f3e26]: 4.9 ★
+          - generic [ref=f3e27]: Google · 68 recenzí
+        - generic [ref=f3e28]:
+          - 'link "Zavolat: +420 774 812 390" [ref=f3e29] [cursor=pointer]':
+            - /url: tel:+420774812390
+            - text: "Zavolat:"
+            - generic [ref=f3e30]: +420 774 812 390
+          - link "Nezávazná poptávka" [ref=f3e31] [cursor=pointer]:
+            - /url: "#kontakt"
+    - region "Co vyrábíme — a od kolika" [ref=f3e32]:
+      - generic [ref=f3e33]:
+        - paragraph [ref=f3e34]: 01 / Služby & ceník
+        - heading "Co vyrábíme — a od kolika" [level=2] [ref=f3e35]
+        - paragraph [ref=f3e36]: Orientační ceny za typickou zakázku. Finální nabídka vždy po zaměření a výběru materiálů.
+        - generic [ref=f3e37]:
+          - article [ref=f3e38]:
+            - generic [ref=f3e39]:
+              - generic [ref=f3e40]:
+                - generic [ref=f3e41]: "01"
+                - paragraph [ref=f3e42]: od 95 000 Kč
+              - heading "Kuchyně na míru" [level=3] [ref=f3e43]
+              - paragraph [ref=f3e44]: Kompletní návrh, výroba korpusů i dvířek, kování Blum a montáž včetně zapojení spotřebičů. Od dispozice po poslední úchytku.
+            - link "Nezávazná poptávka" [ref=f3e45] [cursor=pointer]:
+              - /url: "#kontakt"
+              - text: Nezávazná poptávka
+              - generic [aria-hidden] [ref=f3e46]: →
+          - article [ref=f3e47]:
+            - generic [ref=f3e48]:
+              - generic [ref=f3e49]:
+                - generic [ref=f3e50]: "02"
+                - paragraph [ref=f3e51]: od 28 000 Kč
+              - heading "Vestavěné skříně a šatny" [level=3] [ref=f3e52]
+              - paragraph [ref=f3e53]: Využití prostoru od podlahy ke stropu, posuvné i otočné systémy a vnitřní LED osvětlení. Šatna, která opravdu unese každodenní provoz.
+            - link "Nezávazná poptávka" [ref=f3e54] [cursor=pointer]:
+              - /url: "#kontakt"
+              - text: Nezávazná poptávka
+              - generic [aria-hidden] [ref=f3e55]: →
+          - article [ref=f3e56]:
+            - generic [ref=f3e57]:
+              - generic [ref=f3e58]:
+                - generic [ref=f3e59]: "03"
+                - paragraph [ref=f3e60]: od 18 000 Kč
+              - heading "Nábytek z masivu a koupelny" [level=3] [ref=f3e61]
+              - paragraph [ref=f3e62]: Jídelní stoly, postele, obývací stěny a odolný koupelnový nábytek z dubu a jasanu. Kusy, které vydrží desítky let.
+            - link "Nezávazná poptávka" [ref=f3e63] [cursor=pointer]:
+              - /url: "#kontakt"
+              - text: Nezávazná poptávka
+              - generic [aria-hidden] [ref=f3e64]: →
+          - article [ref=f3e65]:
+            - generic [ref=f3e66]:
+              - generic [ref=f3e67]:
+                - generic [ref=f3e68]: "04"
+                - paragraph [ref=f3e69]:
+                  - text: od 0 Kč
+                  - generic [ref=f3e70]: při realizaci
+              - heading "Zaměření a 3D vizualizace" [level=3] [ref=f3e71]
+              - paragraph [ref=f3e72]: Osobní konzultace u vás v Brně a okolí, výběr dekorů a vzorků materiálů. Vidíte návrh dřív, než se otevře první deska.
+            - link "Nezávazná poptávka" [ref=f3e73] [cursor=pointer]:
+              - /url: "#kontakt"
+              - text: Nezávazná poptávka
+              - generic [aria-hidden] [ref=f3e74]: →
+    - region "Kuchyně, skříně a masiv v hotovém interiéru" [ref=f3e75]:
+      - generic [ref=f3e76]:
+        - paragraph [ref=f3e77]: 02 / Realizace
+        - heading "Kuchyně, skříně a masiv v hotovém interiéru" [level=2] [ref=f3e78]
+        - paragraph [ref=f3e79]: Ukázky stylu práce — od moderních kuchyní po vestavěné úložné systémy a dílenskou výrobu.
+        - list [ref=f3e80]:
+          - listitem [ref=f3e81]:
+            - 'button "Zvětšit: Kuchyňská linka z dubového dřeva s integrovanými spotřebiči" [ref=f3e82]':
+              - img "Kuchyňská linka z dubového dřeva s integrovanými spotřebiči" [ref=f3e84]
+          - listitem [ref=f3e85]:
+            - 'button "Zvětšit: Vestavěná šatna s dřevěnými policemi a šatními tyčemi" [ref=f3e86]':
+              - img "Vestavěná šatna s dřevěnými policemi a šatními tyčemi" [ref=f3e88]
+          - listitem [ref=f3e89]:
+            - 'button "Zvětšit: Masivní dubový jídelní stůl v obývacím prostoru" [ref=f3e90]':
+              - img "Masivní dubový jídelní stůl v obývacím prostoru" [ref=f3e92]
+          - listitem [ref=f3e93]:
+            - 'button "Zvětšit: Bílá kuchyně s dřevěnou pracovní deskou" [ref=f3e94]':
+              - img "Bílá kuchyně s dřevěnou pracovní deskou" [ref=f3e96]
+          - listitem [ref=f3e97]:
+            - 'button "Zvětšit: Otevřený obývací prostor s dřevěnými prvky" [ref=f3e98]':
+              - img "Otevřený obývací prostor s dřevěnými prvky" [ref=f3e100]
+          - listitem [ref=f3e101]:
+            - 'button "Zvětšit: Úložný nábytek na míru v ložnici" [ref=f3e102]':
+              - img "Úložný nábytek na míru v ložnici" [ref=f3e104]
+          - listitem [ref=f3e105]:
+            - 'button "Zvětšit: Detail dřevěného obložení a nábytku" [ref=f3e106]':
+              - img "Detail dřevěného obložení a nábytku" [ref=f3e108]
+          - listitem [ref=f3e109]:
+            - 'button "Zvětšit: Práce s dřevem v dílně" [ref=f3e110]':
+              - img "Práce s dřevem v dílně" [ref=f3e112]
+          - listitem [ref=f3e113]:
+            - 'button "Zvětšit: Moderní koupelnová sestava s dřevěnými povrchy" [ref=f3e114]':
+              - img "Moderní koupelnová sestava s dřevěnými povrchy" [ref=f3e116]
+          - listitem [ref=f3e117]:
+            - 'button "Zvětšit: Truhlářská dílna s opracováním masivního dřeva" [ref=f3e118]':
+              - img "Truhlářská dílna s opracováním masivního dřeva" [ref=f3e120]
+    - region "Od zaměření po montáž ve čtyřech krocích" [ref=f3e121]:
+      - generic [ref=f3e123]:
+        - generic [ref=f3e124]:
+          - paragraph [ref=f3e125]: 03 / Postup spolupráce
+          - heading "Od zaměření po montáž ve čtyřech krocích" [level=2] [ref=f3e126]
+          - paragraph [ref=f3e127]: Žádné nekonečné kolečko e-mailů. Domluvíme se osobně, ukážeme návrh a držíme termín výroby.
+        - list [ref=f3e128]:
+          - listitem [ref=f3e129]:
+            - generic [ref=f3e130]: "01"
+            - generic [ref=f3e131]:
+              - heading "Schůzka a zaměření" [level=3] [ref=f3e132]
+              - paragraph [ref=f3e133]: Přijedeme, změříme prostor a probereme, jak má kuchyně nebo skříň fungovat ve vašem dni.
+          - listitem [ref=f3e134]:
+            - generic [ref=f3e135]: "02"
+            - generic [ref=f3e136]:
+              - heading "Návrh a 3D vizualizace" [level=3] [ref=f3e137]
+              - paragraph [ref=f3e138]: Dostanete konkrétní návrh s materiály a cenou. Upravíme dispozici, dokud sedí rozměr i rozpočet.
+          - listitem [ref=f3e139]:
+            - generic [ref=f3e140]: "03"
+            - generic [ref=f3e141]:
+              - heading "Výroba v dílně" [level=3] [ref=f3e142]
+              - paragraph [ref=f3e143]: Korpusy, dvířka a detaily vznikají u nás. Sledujeme přesnost spojů a kvalitu povrchové úpravy.
+          - listitem [ref=f3e144]:
+            - generic [ref=f3e145]: "04"
+            - generic [ref=f3e146]:
+              - heading "Montáž u vás" [level=3] [ref=f3e147]
+              - paragraph [ref=f3e148]: Doneseme, usadíme a zapojíme. Odneseme zbytky a předáme hotovou realizaci k užívání.
+    - region "Domluvte zaměření nebo pošlete poptávku" [ref=f3e149]:
+      - generic [ref=f3e150]:
+        - paragraph [ref=f3e151]: 04 / Kontakt
+        - heading "Domluvte zaměření nebo pošlete poptávku" [level=2] [ref=f3e152]
+        - generic [ref=f3e153]:
+          - generic [ref=f3e154]:
+            - generic [ref=f3e155]:
+              - heading "Telefon" [level=3] [ref=f3e156]
+              - link "+420 774 812 390" [ref=f3e157] [cursor=pointer]:
+                - /url: tel:+420774812390
+            - generic [ref=f3e158]:
+              - heading "E-mail" [level=3] [ref=f3e159]
+              - link "info@truhlarstvi-dvorak-brno.cz" [ref=f3e160] [cursor=pointer]:
+                - /url: mailto:info@truhlarstvi-dvorak-brno.cz
+            - generic [ref=f3e161]:
+              - heading "Dílna" [level=3] [ref=f3e162]
+              - link "Kšírova 245/18, 619 00 Brno-jih" [ref=f3e163] [cursor=pointer]:
+                - /url: https://www.google.com/maps/search/?api=1&query=K%C5%A1%C3%ADrova+245%2F18%2C+619+00+Brno-jih
+            - generic [ref=f3e164]:
+              - heading "Otevírací doba" [level=3] [ref=f3e165]
+              - paragraph [ref=f3e166]: "Po–Pá: 7:30 – 16:30"
+              - paragraph [ref=f3e167]: Osobní schůzky i o víkendu po domluvě
+            - generic [ref=f3e168]:
+              - paragraph [ref=f3e169]: Google hodnocení
+              - paragraph [ref=f3e170]:
+                - text: 4.9★
+                - generic [ref=f3e171]: (68 recenzí)
+          - generic [ref=f3e172]:
+            - generic [ref=f3e173]:
+              - generic [ref=f3e174]:
+                - generic [ref=f3e175]: Jméno
+                - textbox "Jméno" [ref=f3e176]:
+                  - /placeholder: Jan Novák…
+              - generic [ref=f3e177]:
+                - generic [ref=f3e178]:
+                  - generic [ref=f3e179]: Telefon
+                  - textbox "Telefon" [ref=f3e180]:
+                    - /placeholder: +420 774 …
+                - generic [ref=f3e181]:
+                  - generic [ref=f3e182]: E-mail
+                  - textbox "E-mail" [ref=f3e183]:
+                    - /placeholder: vas@email.cz…
+              - generic [ref=f3e184]:
+                - generic [ref=f3e185]: Co potřebujete
+                - textbox "Co potřebujete" [ref=f3e186]:
+                  - /placeholder: Např. kuchyně do bytu 3+kk, rozměr, termín…
+            - button "Odeslat poptávku" [ref=f3e187]
+  - contentinfo [ref=f3e188]:
+    - generic [ref=f3e189]:
+      - generic [ref=f3e190]:
+        - paragraph [ref=f3e191]: Truhlářství Dvořák
+        - paragraph [ref=f3e192]: Zakázkové kuchyně, vestavěné skříně a nábytek z masivu — Brno a okolí.
+        - link "+420 774 812 390" [ref=f3e193] [cursor=pointer]:
+          - /url: tel:+420774812390
+      - generic [ref=f3e194]:
+        - paragraph [ref=f3e195]: Ukázkový koncept webu · Vytvořil Honza | Webanyl
+        - paragraph [ref=f3e196]: "Fotografie: Unsplash (stand-in za klientské realizace)"
+  - link "Ukázkový návrh · Webanyl" [ref=f3e197] [cursor=pointer]:
+    - /url: https://webanyl.cz

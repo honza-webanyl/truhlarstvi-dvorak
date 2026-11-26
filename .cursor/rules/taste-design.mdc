@@ -1,0 +1,34 @@
+---
+description: Webanyl Art Direction, Taste Skill, Anti-AI-Slop & Visual Architecture
+globs: "**/*"
+alwaysApply: true
+---
+
+# Webanyl Design & Taste Rules
+
+## 1. Design System First (`DESIGN.md`)
+- Before writing UI code in a new project, create or read `DESIGN.md` in the project root.
+- Define a strict palette of max. 3 core colors tailored to the client's trade (e.g., warm oak/cream for carpentry, raw anthracite/amber for auto repair, deep charcoal/gold for barbershop) — never default to generic purple/blue SaaS gradients.
+- Define consistent border-radius, spacing scale, and surface hierarchy.
+
+## 2. Anti-AI-Slop & Copywriting (Czech)
+- All visible text, buttons, labels, form placeholders, and `<title>` / meta tags must be in natural, idiomatic Czech.
+- BANNED clichés: "Vítejte na našich stránkách", "Jsme moderní dynamická firma", "Kvalita na prvním místě", generic stock buzzwords. Use concrete, grounded trade copy.
+- Avoid icon clutter: never put generic icons on every single bullet point or card header.
+
+## 3. Typography & Hierarchy
+- Pair a strong modern sans-serif display font for headings with a contrasting italic serif accent for 1–2 key emotional words in the Hero headline.
+- Use small tracked-out uppercase technical labels (`text-xs uppercase tracking-[0.2em]`) for section numbering (`01 / SLUŽBY`, `02 / REALIZACE`, `03 / CENÍK`).
+
+## 4. Layout & Motion Architecture
+- **Hero Section:** Layered visual depth, authentic Google rating badge (`4.9 ★`), clear value proposition, and immediate mobile-friendly primary CTA (`Zavolat` / `Nezávazná poptávka`).
+- **Structured Grids:** Use bento grids or split-layout cards with crisp `1px` borders, generous internal padding, and subtle hover spotlight/elevation.
+- **Process / Steps (`01`–`04`):** Clear numbered workflow or service breakdown.
+- **Physics-based Motion:** Smooth transitions using `cubic-bezier(0.22, 1, 0.36, 1)`. Respect `prefers-reduced-motion`. Do not rely on heavy 3D video renders.
+
+## 5. Webanyl Attribution Rules
+- **Mode A (Portfolio concept for fictional business):**
+  - Footer text: `Ukázkový koncept webu • Vytvořil Honza | Webanyl`
+  - Floating bottom-right glass badge (`fixed bottom-4 right-4 z-50`): `Ukázkový návrh • Webanyl`
+- **Mode B (Client website):**
+  - Footer text: `Vytvořil Webanyl` (NO floating badge).

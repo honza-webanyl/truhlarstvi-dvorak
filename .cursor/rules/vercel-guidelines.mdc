@@ -1,0 +1,30 @@
+---
+description: Vercel Web Design Guidelines, Mobile Ergonomics & Automated Playwright QA
+globs: "**/*"
+alwaysApply: true
+---
+
+# Webanyl Engineering, UX & QA Rules
+
+## 1. Semantic HTML & Accessibility
+- Use proper semantic landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`) and a single `<h1>` per page.
+- Maintain high text contrast (WCAG AA minimum) across all surfaces and overlays.
+- Every interactive control must have clear `:hover`, `:focus-visible`, and `:active` states.
+
+## 2. Mobile-First Conversion Ergonomics
+- Primary user goal on mobile is calling or requesting a quote within seconds.
+- All tap targets (buttons, phone links, menu toggles) must be at least `44x44px`.
+- Phone numbers must use clickable `href="tel:+420..."` links; addresses should link to maps.
+- Input font sizes must be `>= 16px` to prevent unwanted iOS Safari zoom.
+
+## 3. Images & Performance
+- Enforce explicit `aspect-ratio` containers on all images to prevent Cumulative Layout Shift (CLS).
+- Never use broken image URLs or watermarked stock previews. Use curated, high-resolution Unsplash/Pexels photos matching the Czech trade (or client assets in `_podklady`).
+- Apply `loading="lazy"` to below-the-fold images and `fetchpriority="high"` to the main Hero visual.
+
+## 4. Mandatory Automated Verification (Playwright CLI)
+- Before finishing a build or major layout task, run the local dev server and verify the rendered page via Playwright (headless Chromium) at both Desktop (`1440x900`) and Mobile (`375x812`) viewports:
+  1. Confirm zero horizontal overflow (`document.documentElement.scrollWidth <= window.innerWidth`).
+  2. Confirm zero broken images (`img.complete && img.naturalWidth > 0`).
+  3. Confirm zero uncaught console or page errors.
+- Fix any detected layout or asset issues immediately before reporting completion.

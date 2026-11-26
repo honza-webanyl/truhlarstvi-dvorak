@@ -1,0 +1,23 @@
+---
+description: Impeccable Design Vocabulary - Typography, Color Restraint & Anti-AI-Slop Enforcement
+globs: "**/*"
+alwaysApply: true
+---
+
+# Impeccable Design & Polish Rules
+
+## 1. Eliminate "AI Design Tells" (AI Slop)
+- NEVER generate uniform 3-column feature grids where every card has a colored circle icon on top, a bold 2-word title, and 2 lines of generic filler text.
+- NEVER nest cards inside cards inside cards with heavy shadows.
+- NEVER use default Tailwind blue (`#3B82F6`) or purple-to-cyan gradients as brand accents.
+- Vary section rhythm: alternate asymmetric 2-column split layouts, clean editorial lists with `1px` dividers, bento grids, and full-bleed visual breaks.
+
+## 2. Color & Surface Discipline (60-30-10 Rule)
+- **60% Primary Canvas:** Clean, cohesive background (e.g., warm alabaster `#F8F7F4` or deep obsidian `#0E0F11`).
+- **30% Elevated Surfaces:** Subtle tonal shift (`+4%` lightness on dark, `-3%` on light) with crisp `1px` borders to separate cards and panels.
+- **10% Single Brand Accent:** One high-contrast accent color reserved strictly for primary CTAs, active states, and key highlights.
+
+## 3. Typographic Precision
+- Apply `text-wrap: balance` (`text-balance`) on all `<h1>` and `<h2>` headings to prevent awkward single-word orphans.
+- Use `tabular-nums` on all prices, phone numbers, opening hours, and numbered step badges (`01`, `02`, `03`).
+- Maintain strict line-length discipline (`max-w-prose` / `55–65ch`) on body copy so text never stretches unreadably across wide monitors.

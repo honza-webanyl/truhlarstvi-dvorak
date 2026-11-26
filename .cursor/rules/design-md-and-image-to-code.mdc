@@ -1,0 +1,21 @@
+---
+description: Awesome DESIGN.md Spec Generation & Screenshot/Image-to-Code Workflow
+globs: "**/*"
+alwaysApply: true
+---
+
+# DESIGN.md Architecture & Image-to-Code Rules
+
+## 1. Awesome DESIGN.md Specification First
+- Before generating components in a new project, create a concise `DESIGN.md` in the project root containing:
+  1. **Brand & Art Direction:** Trade mood, target local customer, and visual personality.
+  2. **Color Tokens:** Exact hex codes for `--bg-primary`, `--bg-surface`, `--text-primary`, `--text-muted`, `--accent`, and `--border`.
+  3. **Typography System:** Google Fonts pairing (Display Sans + Accent Italic Serif + Body), exact size scale, and tracking rules.
+  4. **Component & Layout Map:** Section-by-section blueprint (Hero, Services/Pricing, Gallery, Reviews, Contact/Footer).
+- Reference `@DESIGN.md` throughout the build so every section stays 100% visually consistent.
+
+## 2. Image-to-Code (Visual Reference & Screenshot Replication)
+- When the user pastes a screenshot of a reference website, video frame, or a client's old website into Cursor Agent:
+  1. Analyze the exact grid proportions, column ratios, whitespace rhythm, card border radii, and typographic hierarchy from the image.
+  2. Replicate the structural layout and visual polish in clean, responsive React + Tailwind CSS (adapting colors, Czech copy, and real trade photography to the target business).
+  3. Never hardcode fixed pixel widths from screenshots — translate visual proportions into fluid responsive CSS Grid / Flexbox containers.

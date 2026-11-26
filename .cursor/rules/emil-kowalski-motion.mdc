@@ -1,0 +1,22 @@
+---
+description: Emil Kowalski Design Craft - Tactile Micro-interactions, Physics Easing & UI Polish
+globs: "**/*"
+alwaysApply: true
+---
+
+# Emil Kowalski Motion & UI Craft Rules
+
+## 1. Physics-Based Easing & Timing
+- Never use linear or default `ease` transitions for UI interactions.
+- Use smooth deceleration curves (`cubic-bezier(0.22, 1, 0.36, 1)`) for entrances, drawers, modals, and hover lifts.
+- Keep micro-interaction durations snappy: `150ms–200ms` for hover/focus/press states, `300ms–450ms` for layout/modal transitions.
+- Animate only GPU-composited properties (`transform`, `opacity`, `clip-path`) — never animate `width`, `height`, `top`, or `margin`.
+
+## 2. Tactile Feedback & Subtle Depth
+- Primary buttons and interactive cards must provide subtle tactile press feedback (`active:scale-[0.98]`) and crisp hover elevation (`hover:-translate-y-0.5`).
+- Use layered hairline borders (`border-black/10` on light surfaces, `border-white/10` on dark surfaces) instead of heavy, muddy drop shadows.
+- Modal dialogs, mobile menus, and lightbox galleries must open smoothly without layout jump and close cleanly on `Escape` or backdrop click.
+
+## 3. Scroll & Motion Discipline
+- Use restrained, staggered scroll-reveal animations (`opacity` + `translateY(12px)`) only on key section headers and cards — never animate every paragraph.
+- Always respect `@media (prefers-reduced-motion: reduce)` by disabling transforms and keeping instant opacity transitions.
