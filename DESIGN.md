@@ -1,44 +1,40 @@
-# DESIGN.md — Truhlářství Dvořák
+# DESIGN.md — Truhlářství Dvořák (Parallel Studios 3D)
 
-## Reference synthesis (`_ref_videa`)
+## Brand & Art Direction
 
-| Video | Extracted pattern |
-| --- | --- |
-| `8.mp4` LASTDEPT | Tmavá stěna-showroom, skleněné police, bodové podsvícení aktivní karty (warm glow) |
-| `2.mp4` / `3.mp4` Omnya | Editorial: velké kapitálky + kurzívní akcent, číslované kroky `03 / THE CANVAS` |
-| `9.mp4` / `4.mp4` | Full-bleed ostrá fotografie, tenký HUD header, typografie vrstvená přes obraz |
-
-## Brand & Atmosphere
-
-Cinematic showroom × řemeslný ateliér. Tmavý plát `#121212`, ostré fotografie dřeva **bez mlhy**, aktivní stavy v teplé mosazi `#E08A3C`.
+Cinematic product story kolem **jednoho** stolu z olejovaného dubu. Tmavé studio `#0B0A09`, papír `#F5F2EB`, mosaz `#C6923C`. Scroll + „Podržet pro rozklad“ řídí 3D engine; HTML jen vypráví.
 
 ## Color Tokens
 
-| Token | Value | Role |
+| Token | Hex | Role |
 | --- | --- | --- |
-| `--bg` | `#121212` | hlavní plátno |
-| `--bg-elev` | `#1A1A1A` | karty / panely |
-| `--paper` | `#F4EFE6` | formulář / světlý pás |
-| `--ink` | `#F4EFE6` | text na tmavém |
-| `--ink-dark` | `#141312` | text na papíru |
-| `--muted` | `#9A9590` | sekundární |
-| `--accent` | `#E08A3C` | glow, CTA, kurzíva |
-| `--line` | `rgba(255,255,255,0.08)` | rámy |
+| `--bg` | `#0B0A09` | plátno |
+| `--ink` | `#F5F2EB` | text |
+| `--muted` | `#A39E95` | sekundární |
+| `--accent` | `#C6923C` | mosaz / CTA |
+| `--paper` | `#EDE7DB` | formulář |
 
 ## Typography
 
-- Display / UI: **Plus Jakarta Sans** (600–700)
-- Accent italic: **Instrument Serif**
-- Labels: `text-[0.65rem] uppercase tracking-[0.22em]`
+- Display: **Plus Jakarta Sans**
+- Accent: **Instrument Serif** italic
+- Labels: uppercase tracking `0.2em`, `tabular-nums` na kótách
 
 ## Layout Map
 
-1. **Hero** — ostrá kuchyně full-bleed, velké `DVOŘÁK` / *na míru*, 4.9★, CTA
-2. **Realizace** — 4 nasvícené karty (shelf glow), detail modal
-3. **Postup 01–04** — Omnya-style numbered narrative
-4. **Kontakt** — papírový formulář + údaje
-5. Footer Mode A + floating badge
+1. Fixed `<canvas>` fullscreen z-0
+2. Scroll chapters (hero → detail → exploded → around → kontakt)
+3. Hold control (fixed, pointer-events auto)
+4. Mode A footer + floating badge
 
 ## Motion
 
-`cubic-bezier(0.22, 1, 0.36, 1)`. Card underglow opacity 200–280ms. Press `scale(0.98)`. Modal 300ms ease-out. `prefers-reduced-motion` respektován.
+`cubic-bezier(0.22, 1, 0.36, 1)`. Camera + explode lerped. `prefers-reduced-motion`: static frame at progress 0.
+
+## 3D Production Rules
+
+1. Real mm → meters (`/1000`)
+2. Separate meshes, explode along assembly axes
+3. Oak + brushed brass PBR
+4. Soft studio light, contact shadow plane
+5. DPR ≤ 1.75, dispose on unmount
