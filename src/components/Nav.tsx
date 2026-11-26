@@ -3,14 +3,6 @@ import { NAV, SITE } from "../data";
 
 export function Nav() {
   const [open, setOpen] = useState(false);
-  const [scrolled, setScrolled] = useState(false);
-
-  useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
-    onScroll();
-    window.addEventListener("scroll", onScroll, { passive: true });
-    return () => window.removeEventListener("scroll", onScroll);
-  }, []);
 
   useEffect(() => {
     document.body.style.overflow = open ? "hidden" : "";
@@ -20,22 +12,13 @@ export function Nav() {
   }, [open]);
 
   return (
-    <header
-      className={`sticky top-0 z-40 border-b transition-[background-color,border-color,backdrop-filter] duration-200 ${
-        scrolled || open
-          ? "border-line bg-[#0B0A09]/90 backdrop-blur-md"
-          : "border-transparent bg-transparent"
-      }`}
-    >
+    <header className="sticky top-0 z-40 border-b border-line bg-[#F5F2EC]/90 backdrop-blur-md">
       <div className="wrap grid h-16 grid-cols-[1fr_auto] items-center gap-3 md:h-[4.25rem] md:grid-cols-[1fr_auto_1fr]">
-        <a href="#top" className="min-h-11 text-sm font-semibold tracking-[0.08em]">
+        <a href="#top" className="min-h-11 text-sm font-bold tracking-tight">
           TRUHLAŘSTVÍ DVOŘÁK
         </a>
 
-        <nav
-          className="hidden items-center gap-7 md:flex"
-          aria-label="Hlavní navigace"
-        >
+        <nav className="hidden items-center gap-7 md:flex" aria-label="Hlavní navigace">
           {NAV.map((item) => (
             <a
               key={item.href}
@@ -50,13 +33,13 @@ export function Nav() {
         <div className="flex items-center justify-end gap-2">
           <a
             href={SITE.phoneHref}
-            className="btn btn-ghost hidden !min-h-11 !px-4 tabular-nums sm:inline-flex"
+            className="btn btn-dark hidden !min-h-11 !px-4 tabular-nums sm:inline-flex"
           >
             Zavolat: {SITE.phone}
           </a>
           <button
             type="button"
-            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-white/15 md:hidden"
+            className="inline-flex min-h-11 min-w-11 items-center justify-center rounded-full border border-line md:hidden"
             aria-expanded={open}
             aria-controls="mobile-nav"
             aria-label={open ? "Zavřít menu" : "Otevřít menu"}
@@ -78,7 +61,7 @@ export function Nav() {
       </div>
 
       {open ? (
-        <div id="mobile-nav" className="border-t border-line bg-[#0B0A09] md:hidden">
+        <div id="mobile-nav" className="border-t border-line bg-bg md:hidden">
           <nav className="wrap flex flex-col gap-1 py-4" aria-label="Mobilní navigace">
             {NAV.map((item) => (
               <a
@@ -92,7 +75,7 @@ export function Nav() {
             ))}
             <a
               href={SITE.phoneHref}
-              className="btn btn-primary mt-3 w-full tabular-nums"
+              className="btn btn-dark mt-3 w-full tabular-nums"
               onClick={() => setOpen(false)}
             >
               Zavolat: {SITE.phone}

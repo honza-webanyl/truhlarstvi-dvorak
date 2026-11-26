@@ -2,35 +2,30 @@
 
 ## Brand & Art Direction
 
-Ultra-clean architektonický showroom + skryté 3D kování (Parallel Studios). Temný plát `#0B0A09`, papír `#F5F2EB`, mosaz `#D4A359`. Fotografie nábytku ostré, **bez tmavé mlhy**. 3D spoj na pozadí `opacity-85`, text vždy čitelný.
+Světlý skandinávský / architektonický minimalismus. Teplý alabastr, tenké konstrukční linky, ostré fotografie bez overlayů. Žádné 3D, žádné stíny pod kartami, žádné ikony nad textem.
 
 ## Color Tokens
 
-| Token | Hex / value | Role |
+| Token | Hex | Role |
 | --- | --- | --- |
-| `--bg` | `#0B0A09` | plátno |
-| `--ink` | `#F5F2EB` | text |
-| `--muted` | `#A39E95` | sekundární |
-| `--accent` | `#D4A359` | mosaz / CTA |
-| `--line` | `rgba(255,255,255,0.10)` | 1px konstrukce |
-| `--paper` | `#EDE7DB` | formulář |
+| `--bg` | `#F5F2EC` | plátno |
+| `--surface` | `#EBE6DC` | sekundární povrch |
+| `--ink` | `#141413` | text / CTA |
+| `--muted` | `#5E5A52` | sekundární text |
+| `--line` | `#D8D1C4` | 1px konstrukce |
+| `--accent` | `#8F5B32` | dubový akcent |
 
 ## Typography
 
-- UI / display: **Plus Jakarta Sans**
-- Accent italic: **Instrument Serif**
-- Labels: `0.65rem`, tracking `0.2em`, uppercase
+- UI / nadpisy: **Plus Jakarta Sans** (400–700)
+- Kurzívní akcent: **Instrument Serif** italic
 
 ## Layout Map
 
-1. Sticky nav (brand · odkazy · zavolat)
-2. Hero split: typografie + ostrá fotka kuchyně
-3. Showroom 4 kategorií + galerie + lightbox
-4. Postup 01–04 + 2 recenze
-5. Kontakt + formulář
-6. Fixed WebGL canvas (HardwareEngine) + HUD (blueprint / hold)
+1. Sticky nav
+2. Hero split (typografie + fotka)
+3. Kategorie 4 záložky
+4. Realizace 2×2 + lightbox
+5. Postup 01–04 + 2 recenze
+6. Kontakt + formulář
 7. Mode A footer + floating badge
-
-## 3D (HardwareEngine)
-
-Joinery v mm, bevel 0.05 mm, PMREM studio, cursor env rotation, scroll cues, explode + Web Audio click, blueprint EdgesGeometry, DPR ≤ 1.75.
