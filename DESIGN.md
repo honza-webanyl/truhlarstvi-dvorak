@@ -2,30 +2,34 @@
 
 ## Brand & Art Direction
 
-Světlý skandinávský / architektonický minimalismus. Teplý alabastr, tenké konstrukční linky, ostré fotografie bez overlayů. Žádné 3D, žádné stíny pod kartami, žádné ikony nad textem.
+Parallel Studios live-3D systém: jedno plátno vzadu, typografie vpředu. Objekt = zakázkový truhlářský pokosník (mosaz / ocel / skleněná libela). Žádné fotky, žádné těžké karty. Temný fotoateliér `#080809`, papír `#F4F1EA`, mosazný akcent `#C9A36A`.
 
 ## Color Tokens
 
-| Token | Hex | Role |
+| Token | Value | Role |
 | --- | --- | --- |
-| `--bg` | `#F5F2EC` | plátno |
-| `--surface` | `#EBE6DC` | sekundární povrch |
-| `--ink` | `#141413` | text / CTA |
-| `--muted` | `#5E5A52` | sekundární text |
-| `--line` | `#D8D1C4` | 1px konstrukce |
-| `--accent` | `#8F5B32` | dubový akcent |
+| `--bg` | `#080809` | plátno |
+| `--ink` | `#F4F1EA` | text |
+| `--muted` | `#9A948A` | sekundární |
+| `--accent` | `#C9A36A` | mosaz / CTA |
+| `--line` | `rgba(244,241,234,0.12)` | 1px konstrukce |
 
 ## Typography
 
-- UI / nadpisy: **Plus Jakarta Sans** (400–700)
+- Display / UI: **Plus Jakarta Sans**
 - Kurzívní akcent: **Instrument Serif** italic
+- Labels: uppercase, tracking `0.2em`
 
 ## Layout Map
 
-1. Sticky nav
-2. Hero split (typografie + fotka)
-3. Kategorie 4 záložky
-4. Realizace 2×2 + lightbox
-5. Postup 01–04 + 2 recenze
-6. Kontakt + formulář
-7. Mode A footer + floating badge
+1. Sticky nav + zvuk
+2. 01 Přesnost (Hero)
+3. 02 Detail
+4. 03 Konstrukce (explode labels)
+5. 04 Realizace
+6. 05 Poptávka + Mode A footer
+7. Fixed canvas + HUD (blueprint / hold)
+
+## 3D (PrecisionEngine)
+
+mm geometrie, bevel 0.05 mm, PMREM studio, scroll cues, staggered explode, blueprint EdgesGeometry, Web Audio, bloom + ACES + grain, DPR ≤ 1.75, `compileAsync`.
