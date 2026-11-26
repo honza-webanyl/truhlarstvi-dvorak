@@ -1,42 +1,44 @@
 # DESIGN.md — Truhlářství Dvořák
 
-## Brand & Art Direction
+## Reference synthesis (`_ref_videa`)
 
-Showroom × architectural craft: střídání tmavého kouřového showroomu s bodovými světly a teplého papírového výkresového plátu. Atmosféra nočního ateliéru a denního truhlářského stolu.
+| Video | Extracted pattern |
+| --- | --- |
+| `8.mp4` LASTDEPT | Tmavá stěna-showroom, skleněné police, bodové podsvícení aktivní karty (warm glow) |
+| `2.mp4` / `3.mp4` Omnya | Editorial: velké kapitálky + kurzívní akcent, číslované kroky `03 / THE CANVAS` |
+| `9.mp4` / `4.mp4` | Full-bleed ostrá fotografie, tenký HUD header, typografie vrstvená přes obraz |
 
-**Scene A (showroom):** `#0D0C0B` + radiální mosazné světlo `rgba(200,130,59,0.14)`.
-**Scene B (výkres):** `#F2EDE4`, linky `#D6CEC0`, ink `#141312`.
-**Accent:** kartáčovaná mosaz `#C8823B`.
+## Brand & Atmosphere
+
+Cinematic showroom × řemeslný ateliér. Tmavý plát `#121212`, ostré fotografie dřeva **bez mlhy**, aktivní stavy v teplé mosazi `#E08A3C`.
 
 ## Color Tokens
 
-| Token | Hex / value | Role |
+| Token | Value | Role |
 | --- | --- | --- |
-| `--showroom` | `#0D0C0B` | tmavé sekce |
-| `--paper` | `#F2EDE4` | výkres & vzorník |
-| `--ink` | `#141312` | text na papíru |
-| `--ink-soft` | `#F2EDE4` | text na showroomu |
-| `--muted-dark` | `#A39E96` | sekundární na tmavém |
-| `--muted-light` | `#5F5A52` | sekundární na papíru |
-| `--accent` | `#C8823B` | spotlight, aktivní stavy |
-| `--line-dark` | `rgba(255,255,255,0.08)` | rámy výklenků |
-| `--line-paper` | `#D6CEC0` | výkresové linky |
+| `--bg` | `#121212` | hlavní plátno |
+| `--bg-elev` | `#1A1A1A` | karty / panely |
+| `--paper` | `#F4EFE6` | formulář / světlý pás |
+| `--ink` | `#F4EFE6` | text na tmavém |
+| `--ink-dark` | `#141312` | text na papíru |
+| `--muted` | `#9A9590` | sekundární |
+| `--accent` | `#E08A3C` | glow, CTA, kurzíva |
+| `--line` | `rgba(255,255,255,0.08)` | rámy |
 
 ## Typography
 
-- Display / UI: **Plus Jakarta Sans**
+- Display / UI: **Plus Jakarta Sans** (600–700)
 - Accent italic: **Instrument Serif**
-- Section labels: `text-xs uppercase tracking-[0.2em]`
+- Labels: `text-[0.65rem] uppercase tracking-[0.22em]`
 
-## Section Map
+## Layout Map
 
-1. Hero — vrstvená typografie DVOŘÁK / MASIV NA MÍRU přes fotografii
-2. 01 Showroom realizací — spotlight niches + detail panel
-3. 02 Architektura & materiály — SVG kóty + vzorník
-4. 03 Proces výroby — sticky kroky 01–04
-5. 04 Konfigurátor zakázky + kontaktní lišta
-6. Footer Mode A + floating badge
+1. **Hero** — ostrá kuchyně full-bleed, velké `DVOŘÁK` / *na míru*, 4.9★, CTA
+2. **Realizace** — 4 nasvícené karty (shelf glow), detail modal
+3. **Postup 01–04** — Omnya-style numbered narrative
+4. **Kontakt** — papírový formulář + údaje
+5. Footer Mode A + floating badge
 
 ## Motion
 
-`cubic-bezier(0.22, 1, 0.36, 1)`. Spotlight glow na hover (opacity). Press `scale(0.98)`. Lightbox / panel 300–400ms ease-out. `prefers-reduced-motion` vypíná transformy.
+`cubic-bezier(0.22, 1, 0.36, 1)`. Card underglow opacity 200–280ms. Press `scale(0.98)`. Modal 300ms ease-out. `prefers-reduced-motion` respektován.
