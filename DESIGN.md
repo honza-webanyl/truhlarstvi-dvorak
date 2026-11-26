@@ -1,40 +1,36 @@
-# DESIGN.md — Truhlářství Dvořák (Parallel Studios 3D)
+# DESIGN.md — Truhlářství Dvořák
 
 ## Brand & Art Direction
 
-Cinematic product story kolem **jednoho** stolu z olejovaného dubu. Tmavé studio `#0B0A09`, papír `#F5F2EB`, mosaz `#C6923C`. Scroll + „Podržet pro rozklad“ řídí 3D engine; HTML jen vypráví.
+Ultra-clean architektonický showroom + skryté 3D kování (Parallel Studios). Temný plát `#0B0A09`, papír `#F5F2EB`, mosaz `#D4A359`. Fotografie nábytku ostré, **bez tmavé mlhy**. 3D spoj na pozadí `opacity-85`, text vždy čitelný.
 
 ## Color Tokens
 
-| Token | Hex | Role |
+| Token | Hex / value | Role |
 | --- | --- | --- |
 | `--bg` | `#0B0A09` | plátno |
 | `--ink` | `#F5F2EB` | text |
 | `--muted` | `#A39E95` | sekundární |
-| `--accent` | `#C6923C` | mosaz / CTA |
+| `--accent` | `#D4A359` | mosaz / CTA |
+| `--line` | `rgba(255,255,255,0.10)` | 1px konstrukce |
 | `--paper` | `#EDE7DB` | formulář |
 
 ## Typography
 
-- Display: **Plus Jakarta Sans**
-- Accent: **Instrument Serif** italic
-- Labels: uppercase tracking `0.2em`, `tabular-nums` na kótách
+- UI / display: **Plus Jakarta Sans**
+- Accent italic: **Instrument Serif**
+- Labels: `0.65rem`, tracking `0.2em`, uppercase
 
 ## Layout Map
 
-1. Fixed `<canvas>` fullscreen z-0
-2. Scroll chapters (hero → detail → exploded → around → kontakt)
-3. Hold control (fixed, pointer-events auto)
-4. Mode A footer + floating badge
+1. Sticky nav (brand · odkazy · zavolat)
+2. Hero split: typografie + ostrá fotka kuchyně
+3. Showroom 4 kategorií + galerie + lightbox
+4. Postup 01–04 + 2 recenze
+5. Kontakt + formulář
+6. Fixed WebGL canvas (HardwareEngine) + HUD (blueprint / hold)
+7. Mode A footer + floating badge
 
-## Motion
+## 3D (HardwareEngine)
 
-`cubic-bezier(0.22, 1, 0.36, 1)`. Camera + explode lerped. `prefers-reduced-motion`: static frame at progress 0.
-
-## 3D Production Rules
-
-1. Real mm → meters (`/1000`)
-2. Separate meshes, explode along assembly axes
-3. Oak + brushed brass PBR
-4. Soft studio light, contact shadow plane
-5. DPR ≤ 1.75, dispose on unmount
+Joinery v mm, bevel 0.05 mm, PMREM studio, cursor env rotation, scroll cues, explode + Web Audio click, blueprint EdgesGeometry, DPR ≤ 1.75.

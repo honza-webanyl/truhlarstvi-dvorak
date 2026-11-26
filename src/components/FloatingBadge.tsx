@@ -1,4 +1,4 @@
-﻿export function FloatingBadge() {
+export function FloatingBadge() {
   return (
     <a
       href="https://webanyl.cz"
